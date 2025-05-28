@@ -29,4 +29,51 @@ A backend service that handles user authentication, authorization, session manag
 
 ## POSTMAN images
 
+# 1. Register User
 ![](assets/register1.jpg)
+![](assets/register2.jpg)
+
+# 2. Login User
+![](assets/login.jpg)
+
+# 3. Refresh Token
+![](assets/refresh.jpg)
+
+# 4. Logout
+![](assets/logout.jpg)
+
+# 5. Forgot Password
+![](assets/forgot_password.jpg)
+
+# 6. Reset Password
+![](assets/reset_password.jpg)
+
+# 7. Create Comment
+![](assets/comment1.jpg)
+
+# 8. Get Comments
+![](assets/get_comment.jpg)
+
+## 9. Update User Permissions (Admin Only)
+
+**Method:** `PATCH`  
+**URL:** `https://levich-assignment-0gkf.onrender.com/permissions/:userId`  
+_Replace `:userId` with the target user's ID_
+
+### Headers
+- `Content-Type: application/json`  
+- `Authorization: Bearer <admin-access-token-here>`
+
+### Request Body Example
+
+```json
+{
+  "permissions": {
+    "read": true,
+    "write": true,
+    "delete": false
+  },
+  "isAdmin": true
+}
+
+![](assets/update_permission.jpg)
