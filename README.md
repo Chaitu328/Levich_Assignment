@@ -9,15 +9,12 @@ A backend service that handles user authentication, authorization, session manag
 - Password reset flow
 - Role-based permissions (read, write, delete)
 - Comments CRUD operations with permission checks
-- API documentation with Swagger
 
 ## Technologies
 
 - Node.js
 - Express
 - MongoDB (with Mongoose)
-- JWT for authentication
-- Jest for testing
 
 ## Setup
 
