@@ -75,5 +75,5 @@ _Replace `:userId` with the target user's ID_
   },
   "isAdmin": true
 }
-
+```
 ![](assets/update_permission.jpg)
